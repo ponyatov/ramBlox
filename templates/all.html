@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>{{ env.head() }}</title>
+        <link rel="shortcut icon" href="/static/logo.png">
+        <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
+    </body>
+    {% block script %}{% endblock %}
+</html>
